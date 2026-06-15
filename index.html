@@ -312,7 +312,7 @@ footer .gl .em{background:linear-gradient(transparent 60%, var(--yellow) 60% 94%
   background:#fff;box-shadow:0 50px 100px -34px rgba(0,0,0,.7);padding:40px 34px;color:var(--ink)}
 .gate-kick{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--blue);
   border:1px solid var(--line2);padding:6px 13px;border-radius:999px;margin-bottom:18px}
-.gate-title{font-family:"Fraunces",serif;font-weight:900;font-size:46px;letter-spacing:-.02em;line-height:.92;color:var(--ink)}
+.gate-title{font-family:"Fraunces",serif;font-weight:900;font-size:clamp(30px,8vw,44px);letter-spacing:-.02em;line-height:.96;color:var(--ink);overflow-wrap:break-word}
 .gate-title span{background:linear-gradient(92deg,var(--blue),var(--cerise));-webkit-background-clip:text;background-clip:text;color:transparent}
 .gate-sub{color:var(--muted);font-size:14px;margin:12px 0 26px}
 #gateForm{display:flex;gap:10px;flex-direction:column}
@@ -344,7 +344,7 @@ body.locked{overflow:hidden}
   <div class="gate-card">
     <img class="ice-logo-lg" src="ice-logo.png" alt="ICE — leading behaviour change">
     <div class="gate-kick"><span class="live-dot green"></span> ICE members only</div>
-    <h2 class="gate-title">WORLD&nbsp;CUP&nbsp;<span>2026</span></h2>
+    <h2 class="gate-title">WORLD&nbsp;CUP <span>2026</span></h2>
     <p class="gate-sub">Enter the access code to follow the ICE sweepstake live.</p>
     <form id="gateForm" autocomplete="off">
       <input id="gateCode" type="text" placeholder="Access code" aria-label="Access code" spellcheck="false">
